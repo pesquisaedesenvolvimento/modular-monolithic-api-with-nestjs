@@ -1,0 +1,16 @@
+version: '1'
+
+services:
+
+  redis:
+    container_name: bff_voomp_redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
