@@ -89,11 +89,11 @@ query test {
 
 *Generate image*
 
-`docker build -t bff-voomp-image .`
+`docker build -t bff-example-image .`
 
 *Run container*
 
-`docker run --name bff-voomp-container -dp 127.0.0.1:3000:3000 bff-voomp-image`
+`docker run --name bff-example-container -dp 127.0.0.1:3000:3000 bff-example-image`
 
 ### Docker Compose
 
